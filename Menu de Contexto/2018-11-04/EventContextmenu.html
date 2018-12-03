@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Evento Contextmenu</title>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="ContextMenu.js"></script>
+</head>
+<body id="corpo" onclick="esconde()">
+
+        <div  style="padding-top:10%; 
+                     padding-left:16%; 
+                     width:40%; 
+                     height:25%; 
+                     position:absolute; 
+                     float:left; 
+                     top:20%; 
+                     left:20%;
+                     background-color:gold;">
+            <a href="http://www.google.com">Clique com o botão direito do mouse aqui ;)</a>
+        </div>
+
+        <dialog id="Menu" style="border:solid black 0px; color:gray;" >Pesquisar<br>
+            Selecionar<br>Recarregar<br><address onclick="location.reload();">Voltar</address>
+        </dialog>
+</body>
+</html>

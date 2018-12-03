@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Evento Contextmenu</title>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="ContextMenu[18-11-2018].js"></script>
+<style>
+    .rightclickmenu{
+        border:0px solid #000 ;
+        border-radius:6px;
+        z-index:1;
+        font:11px sans-serif;
+        display:none;
+        position:absolute; 
+        background-color:lightsteelblue;
+    }
+    #rightclickobject{
+        padding:10px;
+        width:100px;
+        border-bottom:1px solid #eee;
+        cursor:pointer;
+        border:none;
+        color:black;
+    }
+    #rightclickobject:hover{
+        background:#eee;
+    }
+    .busca{
+        color:rgb(70, 73, 238);
+    }
+    h1{
+        font:calibri;
+        color:teal;
+    }
+</style>
+
+<script>
+
+</script>
+
+</head>
+<body>
+    
+        <h1 >Bem-vindo ao Peggy!</h1>
+<!--------------------------------------ATUALIZADO EM 18-11-2018------------------------------>
+        <!--<div  class="rightclickmenu">            
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Conheça+o+Peggy&source=lnms')"><script>document.write(conteudo.substring(0,16));</script></script></div>
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=ish&source=lnms')"><script>document.write(conteudo.substring(16,33));</script></div>
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=vid&source=lnms')"><script>document.write(conteudo.substring(33));</script></div>
+        </div>-->
+
+
+        <div  class="rightclickmenu">            
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Conheça+o+Peggy&source=lnms')"><?php echo $PrimeiroTexto; ?></script></div>
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=ish&source=lnms')"><?php echo $SegundoTexto; ?></div>
+            <div id="rightclickobject" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=vid&source=lnms')"><?php echo $TerceiroTexto; ?></div>
+        </div>
+
+
+
+        <form name="form1">
+        <ul  class="Lista" name="Lista">            
+            <li class="Itens1"  name="Itens1" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Conheça+o+Peggy&source=lnms')">Pesquise Imagens</li>
+            <li class="Itens2"  name="Itens2" onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=ish&source=lnms')">Pesquise Notícias</li>
+            <li class="Itens3"  name="Itens3"  onclick="window.open('http://www.peggy.com/search?source=hp&oq=Peggy&tbm=vid&source=lnms')">Pesquise Vídeos</li>
+<!--------------------------------------ATUALIZADO EM 18-11-2018------------------------------>
+            <!--ONDE: tbm=ish(pesquisa imagens), tbm=vid(pesquisa videos)-->
+            </ul>
+        </form>
+</body>
+</html>
